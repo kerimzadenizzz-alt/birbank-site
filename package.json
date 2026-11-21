@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@preline/range-slider": "^5.1.0",
+    "@tailwindcss/vite": "^4.3.5",
+    "nouislider": "^15.8.1",
+    "tailwindcss": "^4.3.5"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0"
+  }
+}

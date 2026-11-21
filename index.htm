@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birbank - İlk rəqəmsal bank | Kapital Bank</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+<link rel="stylesheet" href="src/output.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css">
+
+<style>
+html,
+body {
+    background-color: #ffffff !important;
+}
+
+body {
+    background: #ffffff !important;
+}
+@media (max-width: 767px) {
+    html, body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        background: #fff;
+    }
+
+    main {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden;
+    }
+
+    header {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    main > div:first-child {
+        padding: 12px 16px;
+    }
+
+    main > div:first-child img {
+        width: 105px;
+    }
+
+    section.mx-auto.max-w-\[1100px\] {
+        padding: 12px 10px;
+    }
+
+    .swiper,
+    .swiper-wrapper,
+    .swiper-slide {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .swiper-slide > div {
+        min-height: 250px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 12px;
+        padding: 18px 12px;
+    }
+
+    .swiper-slide > div > div:first-child,
+    .swiper-slide > div > div:last-child {
+        width: 100%;
+    }
+
+    .swiper-slide h2 {
+        margin-bottom: 10px;
+        font-size: 25px !important;
+        line-height: 1.2 !important;
+    }
+
+    .swiper-slide p {
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
+
+    .swiper-slide a {
+        padding: 10px 16px;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        max-width: 220px;
+        max-height: 145px;
+        margin: 0 auto;
+        object-fit: contain;
+    }
+
+    .swiper-prev,
+    .swiper-next {
+        width: 30px;
+        height: 30px;
+        font-size: 19px;
+    }
+
+    .swiper + .mt-5,
+    .swiper ~ .mt-5 {
+        gap: 12px;
+    }
+
+    .swiper ~ .mt-5 > div,
+    section .grid > div {
+        min-width: 0;
+    }
+
+    /* Mobil tətbiq */
+    section.flex.min-h-\[1100px\] {
+        min-height: auto !important;
+        padding: 45px 16px 20px;
+    }
+
+    section.flex.min-h-\[1100px\] > div {
+        width: 100%;
+    }
+
+    section.flex.min-h-\[1100px\] > div > p:first-child {
+        font-size: 30px !important;
+        line-height: 1.2 !important;
+    }
+
+    section.flex.min-h-\[1100px\] > div > p:nth-child(2) {
+        font-size: 14px !important;
+        line-height: 1.4 !important;
+    }
+
+    section.flex.min-h-\[1100px\] .mt-10.flex {
+        width: 100%;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    section.flex.min-h-\[1100px\] .mt-10.flex > div:first-child {
+        width: 100%;
+        gap: 12px;
+        align-items: center;
+    }
+
+    section.flex.min-h-\[1100px\] .mt-10.flex a {
+        width: min(240px, 100%);
+        height: 58px;
+    }
+
+    /* Mobil telefonda bütün QR kodlar gizlənir */
+    img[alt="QR kod"] {
+        display: none !important;
+    }
+
+    section.flex.min-h-\[1100px\] .relative.z-10.mt-10 {
+        margin-top: 24px;
+    }
+
+    section.flex.min-h-\[1100px\] .relative.z-10.mt-10 img {
+        width: 85%;
+        max-width: 300px;
+    }
+
+    /* Faydasını hesabla */
+    main > section.container.bg-white {
+        padding: 12px 10px;
+    }
+
+    main > section.container.bg-white > .flex.justify-between {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 12px 6px;
+    }
+
+    main > section.container.bg-white > .flex.justify-between p {
+        font-size: 24px;
+    }
+
+    main > section.container.bg-white > .flex.justify-between > div {
+        width: 100%;
+    }
+
+    main > section.container.bg-white > .flex.justify-between button {
+        flex: 1;
+        padding: 10px 8px;
+    }
+
+    main > section.container.bg-white > .grid.rounded-lg.bg-\[\#f3f3f5\] {
+        grid-template-columns: minmax(0, 1fr);
+        margin: 8px 0 20px;
+        padding: 12px;
+        gap: 12px;
+    }
+
+    main > section.container.bg-white > .grid.rounded-lg.bg-\[\#f3f3f5\] > div {
+        margin: 0;
+        padding: 12px;
+        min-width: 0;
+    }
+
+    main > section.container.bg-white > .grid.rounded-lg.bg-\[\#f3f3f5\] h3 {
+        font-size: 28px !important;
+        line-height: 1.2;
+    }
+
+    main > section.container.bg-white > .grid.rounded-lg.bg-\[\#f3f3f5\] input {
+        font-size: 16px;
+    }
+
+    main > section.container.bg-white > .grid.rounded-lg.bg-\[\#f3f3f5\] a {
+        margin: 8px 0 0;
+        padding: 12px;
+    }
+
+    /* Tünd banner */
+    main > section.container.bg-white > .mt-10.grid {
+        grid-template-columns: minmax(0, 1fr);
+        margin-top: 18px;
+    }
+
+    main > section.container.bg-white > .mt-10.grid > div:first-child {
+        padding: 18px;
+    }
+
+    main > section.container.bg-white > .mt-10.grid h2 {
+        font-size: 23px;
+        line-height: 1.25;
+    }
+
+    main > section.container.bg-white > .mt-10.grid img {
+        width: 150px;
+        max-width: 100%;
+    }
+
+    /* Onlayn kredit, depozit və kampaniyalar */
+    main > section.container.bg-white .grid.grid-cols-1.gap-4.md\:grid-cols-2 {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    main > section.container.bg-white .grid.grid-cols-1.gap-4.md\:grid-cols-2 > div {
+        margin: 0;
+        padding: 8px;
+    }
+
+    main > section.container.bg-white .grid.min-h-\[135px\] {
+        min-height: 145px;
+        padding: 12px;
+    }
+
+    main > section.container.bg-white .grid.min-h-\[135px\] h3 {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    main > section.container.bg-white .grid.min-h-\[135px\] img {
+        max-height: 125px;
+    }
+
+    main > section.container.bg-white .m-4.grid.min-h-\[300px\] {
+        min-height: 230px;
+        background-position: center;
+    }
+
+    /* Xəbərlər */
+    main > section + section .grid.grid-cols-1.gap-4.sm\:grid-cols-3 {
+        grid-template-columns: minmax(0, 1fr);
+        padding: 12px;
+    }
+
+    main > section + section .grid.grid-cols-1.gap-4.sm\:grid-cols-3 article img {
+        height: 190px;
+    }
+
+    /* Xidmətlər */
+    main > section:last-of-type .grid.grid-cols-1.gap-4.md\:grid-cols-2 {
+        grid-template-columns: minmax(0, 1fr);
+        padding: 12px;
+    }
+
+    main > section:last-of-type h2,
+    main > section:last-of-type h3 {
+        font-size: 23px;
+        line-height: 1.25;
+    }
+
+    main > section:last-of-type .grid.grid-cols-4 {
+        grid-template-columns: 1.15fr 1fr 0.8fr 0.8fr;
+        gap: 4px;
+        font-size: 11px;
+    }
+
+    main > section:last-of-type .grid.grid-cols-4 span {
+        overflow-wrap: anywhere;
+    }
+
+    /* Footer */
+    footer {
+        padding: 32px 0;
+    }
+
+    footer > div {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    footer > div > div:first-child {
+        gap: 28px;
+    }
+
+    footer img[alt="Birbank"] {
+        width: 180px;
+        max-width: 100%;
+    }
+
+    footer ul {
+        gap: 12px;
+        font-size: 15px;
+    }
+
+    footer .flex.shrink-0.items-start.gap-4 {
+        flex-wrap: wrap;
+    }
+
+    footer .flex.shrink-0.items-start.gap-4 a {
+        width: 165px;
+        height: 55px;
+    }
+
+    footer .flex.flex-wrap.items-center.justify-between {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    footer .flex.items-center.gap-6.text-2xl {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 380px) {
+    .swiper-slide h2 {
+        font-size: 22px !important;
+    }
+
+    section.flex.min-h-\[1100px\] > div > p:first-child {
+        font-size: 26px !important;
+    }
+
+    main > section.container.bg-white > .grid.rounded-lg.bg-\[\#f3f3f5\] h3 {
+        font-size: 24px !important;
+    }
+
+    footer .flex.shrink-0.items-start.gap-4 a {
+        width: 150px;
+    }
+}
+
+/* Accessibility və Chat düymələri */
+.accessibility-button {
+    position: fixed;
+    left: 22px;
+    bottom: 24px;
+    z-index: 9999;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ef1938;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #ef1938;
+    font-size: 29px;
+    cursor: pointer;
+}
+
+.chat-button {
+    position: fixed;
+    right: 28px;
+    bottom: 80px;
+    z-index: 9999;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #ffb4d0, #ff4b91 55%, #f51c63);
+    color: #ffffff;
+    font-size: 31px;
+    cursor: pointer;
+    box-shadow: 0 3px 12px rgba(239, 25, 56, 0.18);
+}
+
+@media (max-width: 767px) {
+    .accessibility-button {
+        left: 14px;
+        bottom: 18px;
+        width: 46px;
+        height: 46px;
+        font-size: 25px;
+    }
+
+    .chat-button {
+        right: 14px;
+        bottom: 72px;
+        width: 60px;
+        height: 60px;
+        font-size: 27px;
+    }
+}
+</style>
+</head>
+
+<body class="bg-white overflow-x-hidden w-full">
+    <header class="hidden border-b-2 border-gray-100 text-sm md:block mx-auto max-w-[1100px]">
+    <div class="container mx-auto flex items-center justify-between px-2">
+        <nav>
+            <ul class="flex items-center font-medium text-[#9496ac]">
+                <li><a href="#" class="border-b-2 border-[#ef1938] block hover:border-b-2 border-[#ef1938] px-4 p-4 text-lg">Fiziki</a></li>
+                <li><a href="#" class="block hover:border-b-2 border-[#ef1938] px-4 p-4 text-lg">Biznes</a></li>
+                <li><a href="#" class="block hover:border-b-2 border-[#ef1938] px-4 p-4 text-lg">Invest</a></li>
+                <li><a href="#" class="block hover:border-b-2 border-[#ef1938] px-4 p-4 text-lg">Private</a></li>
+            </ul>
+        </nav>
+
+        <div class="flex items-center gap-6">
+            <span class="text-[#9496ac] text-xs">
+                'Birbank' brendi 'Kapital Bank' ASC-nin əmtəə nişanıdır.
+            </span>
+
+            <a href="#" class="flex items-center gap-4 rounded-lg bg-[#ef1938] px-2 py-1 text-md font-medium text-white">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Xidmət şəbəkəsi</span>
+            </a>
+
+            <div class="flex items-center gap-3 text-sm text-[#9496ac]">
+                <a href="#">EN</a>
+                <a href="#">RU</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="bg-white container mx-auto max-w-[1100px]">
+
+    <div class="container m-auto flex items-center justify-between px-4 py-4">
+        <a href="#">
+            <img src="img/birbank_full_color.png" alt="Birbank logo" class="w-[110px] md:w-[130px]">
+        </a>
+
+        <div class="md:hidden">
+            <button class="flex items-center justify-center rounded-lg bg-[#ef1938] p-2.5 text-white">
+                <i class="fa-solid fa-bars text-lg"></i>
+            </button>
+        </div>
+
+        <nav class="hidden md:block">
+            <ul class="flex items-right text:sm font-medium text-gray-400 lg:gap-8">
+                <li><a href="#" class="text:sm block hover:border-b-2 border-[#ef1938]">Kartlar</a></li>
+                <li><a href="#" class="text:sm block hover:border-b-2 border-[#ef1938]">Kreditlər</a></li>
+                <li><a href="#" class="text:sm block hover:border-b-2 border-[#ef1938]">Əmanətlər</a></li>
+                <li><a href="#" class="text:sm block hover:border-b-2 border-[#ef1938]">İstiqraz</a></li>
+                <li><a href="#" class="text:sm block hover:border-b-2 border-[#ef1938]">Pul köçürmələri</a></li>
+                <li><a href="#" class="text:sm block hover:border-b-2 border-[#ef1938]">Partnyorlar</a></li>
+                <li><a href="#" class="text:sm block hover:border-b-2 border-[#ef1938]">Kampaniyalar</a></li>
+                <li><a href="#" class="text:sm block hover:border-b-2 border-[#ef1938]">Xəbərlər</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- SLIDERLƏR -->
+    <section class="mx-auto max-w-[1100px] px-3 py-6 bg-white">
+        <div class="bg-[#f3f3f5] p-5 md:p-6">
+            <div class="swiper mySwiper relative bg-[#f3f3f3]">
+                <div class="swiper-wrapper bg-[#f3f3f3]">
+
+                    <div class="swiper-slide">
+                        <div class="flex bg-[#f3f3f3] min-h-[280px] items-center justify-between gap-4">
+                            <div class="w-1/2">
+                                <h2 class="text-6xl font-bold text-[#25282b] md:text-4xl">
+                                    Birbank Taksit ilə bu ay əlavə 5% bonus qazan
+                                </h2>
+                                <p class="mb-5 text-sm text-gray-500">
+                                    Yalnız saytımızda qeydiyyatdan keçdikdən sonra
+                                </p>
+                                <a href="#" class="inline-flex items-center gap-3 rounded-lg bg-white px-6 py-4 text-sm text-[#ef1938]">
+                                    Ətraflı <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="flex w-1/2 justify-center">
+                                <img src="img/slider1.png" class="max-h-[250px] max-w-full object-contain" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="flex bg-[#f3f3f3] min-h-[280px] items-center justify-between gap-4">
+                            <div class="w-1/2">
+                                <h2 class="mb-5 text-3xl font-bold text-[#25282b] md:text-4xl">
+                                    'Yığ və qazan' lotereyası
+                                </h2>
+                                <p class="mb-5 text-sm text-gray-900">8 oktyabr 2026-cı ildən 8 yanvar 2027-ci ilədək Yığım hesabınla tapşırıqları tamamla, şanslar topla və pul mükafatlarından birini qazanmaq imkanı əldə et.</p>
+                                <a href="#" class="inline-flex items-center gap-3 rounded-lg bg-white px-6 py-4 text-sm text-[#ef1938]">
+                                    Ətraflı <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="flex w-1/2 justify-center">
+                                <img src="img/slider2.png" class="max-h-[250px] object-contain" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="flex bg-[#f3f3f3] min-h-[280px] items-center justify-between gap-4">
+                            <div class="w-1/2">
+                                <h2 class="mb-5 text-3xl font-bold text-[#25282b] md:text-4xl">Səyahət xərclərini millərinlə əvəz et</h2>
+                                <p class="mb-5 text-sm text-gray-500">Hər təqvim ayı ərzində 5 pulsuz avtobus və ya metro gedişindən yararlan.</p>
+                                <a href="#" class="inline-flex items-center gap-3 rounded-lg bg-white px-6 py-4 text-sm text-[#ef1938]">
+                                    Ətraflı <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                                <a href="#" class="inline-flex items-center gap-3 rounded-lg bg-white px-6 py-4 text-sm text-[#ef1938]">
+                                    Əldə et <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="flex w-1/2 justify-center">
+                                <img src="img/slider4.png" class="max-h-[250px] max-w-full object-contain" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="flex bg-[#f3f3f3] min-h-[280px] items-center justify-between gap-4">
+                            <div class="w-1/2">
+                                <h2 class="mb-5 text-3xl font-bold text-[#25282b] md:text-4xl">Hərbiçilərimizə özəl xüsusi təklif</h2>
+                                <p class="mb-5 text-sm text-gray-500">30 noyabra kimi 5%-dək endirimlə kredit əldə et</p>
+                                <a href="#" class="inline-flex items-center gap-3 rounded-lg bg-white px-6 py-4 text-sm text-[#ef1938]">
+                                    Ətraflı <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="flex w-1/2 justify-center">
+                                <img src="img/slider3.png" class="max-h-[250px] max-w-full object-contain" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="flex bg-[#f3f3f3] min-h-[280px] items-center justify-between gap-4">
+                            <div class="w-1/2">
+                                <h2 class="mb-5 text-3xl font-bold text-[#25282b] md:text-4xl">Səyahət xərclərini minlərlə əvəz et</h2>
+                                <p class="mb-5 text-sm text-gray-500">Hotel və tur agentliklərində də minlərinlə </p>
+                                <a href="#" class="inline-flex items-center gap-3 rounded-lg bg-white px-6 py-4 text-sm text-[#ef1938]">
+                                    Ətraflı <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="flex w-1/2 justify-center">
+                                <img src="img/slider4.png" class="max-h-[250px] max-w-full object-contain" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="flex bg-[#f3f3f3] min-h-[280px] items-center justify-between gap-4">
+                            <div class="w-1/2">
+                                <h2 class="mb-5 text-3xl font-bold text-[#25282b] md:text-4xl">Onlayn kredit 5%-dək daha sərfəli </h2>
+                                <p class="mb-5 text-sm text-gray-500">80 000 <span><i class="fa-solid fa-manat-sign"></i>-dək nağd pulu əldə et</span>
+                                </p>
+                                <a href="#" class="inline-flex items-center gap-3 rounded-lg bg-white px-6 py-4 text-sm text-[#ef1938]">
+                                    Kredit götür <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="flex w-1/2 justify-center">
+                                <img src="img/slider6.png" class="max-h-[250px] max-w-full object-contain" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="flex bg-[#f3f3f3] min-h-[280px] items-center justify-between gap-4">
+                            <div class="w-1/2">
+                                <h2 class="mb-5 text-3xl font-bold text-[#25282b] md:text-4xl">Qafqazın ilk tam inteqrasiyalı rəqəmsal platforması </h2>
+                                <a href="#" class="inline-flex items-center gap-3 rounded-lg bg-white px-6 py-4 text-sm text-[#ef1938]">
+                                    Ətraflı <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="flex w-1/2 justify-center">
+                                <img src="img/slider7.png" class="max-h-[250px] max-w-full object-contain" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="swiper-prev absolute left-[-10px] top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-lg bg-white text-2xl text-gray-400 shadow">‹</button>
+                <button class="swiper-next absolute right-[-10px] top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-lg bg-white text-2xl text-gray-400 shadow">›</button>
+            </div>
+
+            <!-- 2 BÖYÜK KART -->
+            <div class="mt-5 grid grid-cols-1 gap-5 md:grid-cols-2">
+                <div class="relative flex min-h-[150px] overflow-hidden rounded-xl bg-white p-5">
+                    <div class="relative z-10 w-3/5">
+                        <h3 class="mb-2 font-semibold text-[#25282b]">Birbank Star kartı</h3>
+                        <p class="text-xs leading-[18px] text-gray-500">
+                            Üstünlüklərlə dolu bu kartla ürəyincə xərclə, məbləği ay sonu geri qaytardıqda əlavə heç nə ödəmə.
+                        </p>
+                    </div>
+                    <img src="img/div1.png" class="absolute bottom-0 right-0 h-[125px] w-[145px] object-contain" alt="">
+                </div>
+
+                <div class="relative flex min-h-[150px] overflow-hidden rounded-xl bg-white p-5">
+                    <div class="relative z-10 w-3/5">
+                        <h3 class="mb-2 font-semibold text-[#25282b]">Nağd pul krediti</h3>
+                        <p class="text-xs leading-[18px] text-gray-500">
+                            80 000 AZN-dək krediti sərfəli şərtlərlə, asanlıqla və çox qısa zamanda əldə et.
+                        </p>
+                    </div>
+                    <img src="img/nagdpulkrediti.png" class="absolute bottom-0 right-0 h-[125px] w-[155px] object-contain" alt="">
+                </div>
+            </div>
+
+            <!-- 3 KİÇİK KART -->
+            <div class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-3">
+                <div class="relative flex min-h-[150px] overflow-hidden rounded-xl bg-white p-5">
+                    <div class="relative z-10 w-3/5">
+                        <h3 class="mb-2 font-semibold text-[#25282b]">İstiqraz</h3>
+                        <p class="text-xs leading-[18px] text-gray-500">
+                            Yüksək gəlirli və etibarlı istiqrazlarımıza yatırım etməklə daha çox gəlir qazana bilərsən.
+                        </p>
+                    </div>
+                    <img src="img/slider3.png" class="absolute bottom-0 right-0 h-[110px] w-[115px] object-contain" alt="">
+                </div>
+
+                <div class="relative flex min-h-[150px] overflow-hidden rounded-xl bg-white p-5">
+                    <div class="relative z-10 w-3/5">
+                        <h3 class="mb-2 font-semibold text-[#25282b]">Depozit</h3>
+                        <p class="text-xs leading-[18px] text-gray-500">
+                            Birbank tətbiqi ilə depozit yatır, gəlirini yüksək faizlə artır.
+                        </p>
+                    </div>
+                    <img src="img/slider4.png" class="absolute bottom-0 right-0 h-[110px] w-[115px] object-contain" alt="">
+                </div>
+
+                <div class="relative flex min-h-[150px] overflow-hidden rounded-xl bg-white p-5">
+                    <div class="relative z-10 w-3/5">
+                        <h3 class="mb-2 font-semibold text-[#25282b]">Birbank Kartı</h3>
+                        <p class="text-xs leading-[18px] text-gray-500">
+                            Bu kart sənə bol-bol bonus, ödənişlərinə rahatlıq gətirəcək.
+                        </p>
+                    </div>
+                    <img src="img/slider5.png" class="absolute bottom-0 right-0 h-[110px] w-[115px] object-contain" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- MOBİL TƏTBİQ -->
+    
+
+<section class="relative flex min-h-[1100px] w-full flex-col items-center overflow-hidden bg-[#4b686f] px-4 pt-14 text-center sm:pt-16">
+    <img
+        src="img/arxadakixettler.png"
+        alt=""
+        aria-hidden="true"
+        class="pointer-events-none absolute inset-0 h-full w-full object-fill"
+    >
+
+    <div class="relative z-10 mx-auto flex w-full max-w-[750px] flex-col items-center">
+
+        <p class="mb-3 text-6xl leading-15 font-medium font-inter text-white sm:text-6xl">
+            Yenilənmiş mobil tətbiqimiz hər zaman xidmətindədir.
+        </p>
+
+        <p class="text-2xl leading-5 font-semibold text-white sm:text-sm">
+            iOS və Android əməliyyat sistemlərində mövcuddur.
+        </p>
+
+        <div class="mt-10 flex items-center justify-center gap-10">
+
+            <div class="flex flex-col gap-6">
+
+                <a href="#" class="flex h-[75px] w-[240px] items-center gap-3 rounded-xl bg-[#25282b] px-6 text-left text-white">
+                    <i class="fa-brands fa-app-store-ios text-3xl"></i>
+                    <span class="flex flex-col leading-tight">
+                        <span class="text-xl font-semibold">App Store</span>
+                        <span class="text-sm">mobil tətbiqi yüklə</span>
+                    </span>
+                </a>
+
+                <a href="#" class="flex h-[75px] w-[240px] items-center gap-3 rounded-xl bg-[#25282b] px-6 text-left text-white">
+                    <i class="fa-brands fa-google-play text-3xl"></i>
+                    <span class="flex flex-col leading-tight">
+                        <span class="text-xl font-semibold">Google Play</span>
+                        <span class="text-sm">mobil tətbiqi yüklə</span>
+                    </span>
+                </a>
+
+            </div>
+
+            <div class="shrink-0">
+                <img src="img/qrkod.png" alt="QR kod" class="h-[150px] w-[150px] object-contain">
+            </div>
+
+        </div>
+
+        <div class="relative z-10 mt-10 flex w-full justify-center">
+            <img
+                src="img/telefon.png"
+                alt="Birbank mobil tətbiqi"
+                class="w-2/3 max-w-[400px] object-contain"
+            >
+        </div>
+
+    </div>
+</section>
+
+    <!-- FAYDASINI HESABLA -->
+    <section class="container bg-white mx-auto px-3 py-6">
+        <div class="flex justify-between items-center p-6">
+            <p class="font-semibold text-3xl text-gray-900">Faydasını hesabla</p>
+
+            <div class="flex bg-[#f3f3f3] rounded-xl w-fit">
+                <button class="bg-[#25282b] px-7 py-3 rounded-lg text-white">
+                    <a href="">Nağd kredit</a>
+                </button>
+                <button class="px-7 py-3 rounded-lg text-gray-500">
+                    <a href="#">Depozit</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-5 rounded-lg bg-[#f3f3f5] p-6 m-10 md:grid-cols-2">
+            <div class="p-8">
+                <h3 class="mb-3 text-left text-2xl font-semibold text-gray-800 md:text-5xl">
+                    Nağd krediti hesabla
+                </h3>
+
+                <div class="space-y-3">
+                    <div class="rounded border border-gray-300 bg-white px-3 py-1">
+                        <p class="text-[12px] text-gray-400">Məbləğ</p>
+                        <input type="number" value="10000" class="w-full text-xl outline-none">
+                    </div>
+
+                    <div class="rounded border border-gray-300 bg-white px-3 py-1">
+                        <p class="text-[12px] text-gray-400">Faiz</p>
+                        <input type="number" value="10.9" class="w-full text-xl outline-none">
+                    </div>
+
+                    <div class="rounded border border-gray-300 bg-white px-3 py-1">
+                        <p class="text-[12px] text-gray-400">Müddət (ay)</p>
+                        <input type="number" value="3" class="w-full text-xl outline-none">
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-4 rounded-lg bg-white p-4">
+                <div class="grid grid-cols-[40px_1fr] items-center gap-3 border-b border-gray-100 pb-3">
+                    <div class="rounded-full bg-red-50 p-3 text-center text-[#ef1938]">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                    </div>
+
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800">3394.07 ₼</h3>
+                        <p class="text-sm font-semibold text-gray-800">Aylıq ödəniş</p>
+                    </div>
+                </div>
+
+                <p class="my-3 text-[10px] leading-4 text-gray-400">
+                    <span><i class="fa-solid fa-circle-info"></i></span>
+                    Müştərilərimizə asanlıqla əldə edə biləcəkləri taksit kartı təklif edirik.
+                </p>
+
+                <a href="#" class="m-4 block rounded-xl bg-[#ef1938] px-4 py-5 text-center text-base font-semibold text-white">
+                    Sifariş et
+                </a>
+            </div>
+        </div>
+
+        <!-- BİRBANK KARTLARI -->
+        <div class="mt-10 grid items-center overflow-hidden rounded-xl bg-[#25282b] md:grid-cols-2">
+            <div class="p-6">
+                <h2 class="mb-4 text-3xl font-bold text-white">
+                    Birbank kartları ilə xüsusi təklif və imkanlardan yararlan
+                </h2>
+
+                <p class="mb-4 leading-4 text-gray-300">
+                    Visa və MasterCard® beynəlxalq ödəniş sistemlərini dəstəkləyən kartlarla dünyanın istənilən yerində ödənişlər etmək imkanına sahib ol.
+                </p>
+
+                <a href="#" class="inline-block rounded-md bg-white px-5 py-2 text-[10px] text-[#25282b]">
+                    Daha ətraflı →
+                </a>
+            </div>
+
+            <div class="flex justify-end items-end">
+                <img src="img/birbankkartlari.png" alt="" class="w-[200px]">
+            </div>
+        </div>
+
+        <!-- KARTLAR VƏ KAMPANİYALAR -->
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+            <div class="grid gap-4 p-6">
+                <div class="grid min-h-[135px] grid-cols-2 items-center overflow-hidden rounded-lg bg-[#fff0f1] p-4">
+                    <div>
+                        <h3 class="mb-2 text-3xl font-medium text-gray-900">Onlayn kredit</h3>
+                        <p class="text-[10px] leading-4 text-gray-900">
+                            Krediti banka gəlmədən və növbə gözləmədən əldə et
+                        </p>
+                        <a href="#" class="mt-5 block text-[20px] text-[#ef1938]">Sifariş et →</a>
+                    </div>
+                    <img src="img/onlaynkredit.png" alt="Onlayn kredit" class="w-full object-contain">
+                </div>
+
+                <div class="grid min-h-[135px] grid-cols-2 items-center overflow-hidden rounded-lg bg-[#f3f3f5] p-4">
+                    <div>
+                        <h3 class="mb-2 text-xl font-medium text-gray-900">Depozit</h3>
+                        <p class="text-[10px] leading-4 text-gray-500">
+                            İstər filialda, istərsə də onlayn depozit yerləşdir, qazancını çoxalt
+                        </p>
+                        <a href="#" class="mt-5 block text-[10px] text-[#ef1938]">Sifariş et →</a>
+                    </div>
+                    <img src="img/depozit.png" alt="Depozit" class="w-full object-contain">
+                </div>
+            </div>
+
+            <div class="m-4 grid min-h-[300px] grid-cols-1 items-start overflow-hidden rounded-lg bg-[url('img/kampaniyalar.png')] bg-cover bg-center p-4 md:grid-cols-2">
+                <div class="m-4 rounded-lg bg-white/80 p-6">
+                    <h3 class="mb-2 text-xl font-semibold text-gray-900">Kampaniyalar</h3>
+                    <p class="text-[10px] leading-4 text-gray-600">
+                        Birbank ilə sərfəli kampaniyalardan və xüsusi təkliflərdən yararlan.
+                    </p>
+                    <a href="#" class="mt-5 inline-block rounded bg-white px-3 py-2 text-sm text-[#ef1938]">
+                        Daha ətraflı →
+                    </a>
+                </div>
+                <div>
+                    <img src="img/kampaniyalar.png" alt="" class="w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- XƏBƏRLƏR -->
+    <section>
+        <div class="mb-4 grid grid-cols-2 items-center p-6">
+            <h2 class="text-3xl font-semibold text-gray-900">Xəbərlər</h2>
+            <a href="#" class="text-right text-lg text-[#ef1938]">Bütün xəbərlər →</a>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-3 p-6">
+            <article class="overflow-hidden rounded-lg border border-gray-200 bg-white">
+                <img src="img/xeber1.png" alt="Xəbər 1" class="h-[300px] w-full object-cover">
+                <div class="p-3">
+                    <h3 class="my-2 text-md font-semibold leading-4 text-gray-800">
+                        Birbank-ın “Böl-ödə” krediti ilə 15 000 AZN-dək alış-verişi 6 ayadək komissiyasız hissələrə bölün
+                    </h3>
+                    <p class="text-[9px] leading-4 text-white">Birbank haqqında yeniliklər və məlumatlar.</p>
+                    <p class="mt-3 text-sm font-semibold text-gray-400">2026-11-16</p>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-lg border border-gray-200 bg-white">
+                <img src="img/xeber2.png" alt="Xəbər 2" class="h-[300px] w-full object-cover">
+                <div class="p-3">
+                    <h3 class="my-2 text-md font-semibold leading-4 text-gray-800">
+                        Birbank Private PWM və The Banker tərəfindən Azərbaycanın ən yaxşı özəl bankı seçilib
+                    </h3>
+                    <p class="text-[9px] leading-4 text-white">Birbank haqqında yeniliklər və məlumatlar.</p>
+                    <p class="mt-3 text-sm font-semibold text-gray-400">2026-11-15</p>
+                </div>
+            </article>
+
+            <article class="overflow-hidden rounded-lg border border-gray-200 bg-white">
+                <img src="img/xeber3.png" alt="Xəbər 3" class="h-[300px] w-full object-cover">
+                <div class="p-3">
+                    <h3 class="my-2 text-md font-semibold leading-4 text-gray-800">
+                        Birbank hərbçilər üçün nağd kreditdə 5%-dək güzəşt təqdim edir
+                    </h3>
+                    <p class="text-[9px] leading-4 text-white">Xüsusi təkliflərdən yararlan.</p>
+                    <p class="mt-3 text-sm font-semibold text-gray-400">2026-11-12</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- XİDMƏTLƏR -->
+    <section>
+        <h2 class="mb-2 text-3xl font-semibold text-gray-900 p-6">Xidmətlər</h2>
+
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 p-6">
+            <div class="rounded-lg bg-[#f5f5f7] p-4">
+                <h3 class="mb-3 text-3xl font-semibold text-gray-800">Valyuta məzənnələri</h3>
+
+                <div class="mb-3 pt-3 grid grid-cols-2 text-md">
+                    <button class="rounded bg-[#25282b] py-2 text-white">Alış</button>
+                    <button class="rounded bg-white py-2 text-gray-500">Satış</button>
+                </div>
+
+                <div class="grid grid-cols-4 gap-2 border-b border-gray-200 pb-2 text-md font-bold text-gray-900">
+                    <span>Valyuta</span>
+                    <span>Milli Bank</span>
+                    <span>Nağd</span>
+                    <span>Nağdsız</span>
+                </div>
+
+                <div class="grid gap-3 py-3 text-md text-gray-900">
+                    <div class="grid grid-cols-4 gap-2">
+                        <span><i class="fa-solid fa-dollar-sign"></i> USD</span>
+                        <span>1.7000</span>
+                        <span>1.6900</span>
+                        <span>1.6900</span>
+                    </div>
+
+                    <div class="grid grid-cols-4 gap-2">
+                        <span><i class="fa-solid fa-euro-sign"></i> EUR</span>
+                        <span>1.9627</span>
+                        <span>1.9370</span>
+                        <span>1.9500</span>
+                    </div>
+
+                    <div class="grid grid-cols-4 gap-2">
+                        <span><i class="fa-solid fa-sterling-sign"></i> GBP</span>
+                        <span>2.2250</span>
+                        <span>2.2400</span>
+                        <span>2.2500</span>
+                    </div>
+
+                    <div class="grid grid-cols-4 gap-2">
+                        <span><i class="fa-solid fa-ruble-sign"></i> 100 RUB</span>
+                        <span>2.0630</span>
+                        <span>2.1430</span>
+                        <span>2.1500</span>
+                    </div>
+                </div>
+
+                <div class="flex gap-3 mt-2 pt-3">
+                    <a href="#" class="block text-right text-md text-[#ef1938]">
+                        <span class="text-gray-900 gap-4 text-sm">
+                            Kurslar bu tarixə təyin edilmişdir: 20-11-2026
+                        </span>
+                        Bütün məzənnələr →
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid gap-3">
+                <a href="#" class="grid grid-cols-2 items-center overflow-hidden rounded-lg bg-[#f5f5f7] p-3">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800">Xidmət şəbəkəsi</h3>
+                        <p class="mt-1 text-md text-gray-500">Sənə ən yaxın filial və bankomatı tap.</p>
+                    </div>
+                    <img src="img/xidmet.png" alt="" class="h-[70px] w-full object-contain">
+                </a>
+
+                <a href="#" class="grid grid-cols-2 items-center overflow-hidden rounded-lg bg-[#f5f5f7] p-3">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800">Necə etməli</h3>
+                        <p class="mt-1 text-md text-gray-500">
+                            Məhsul və xidmətlərimizdən daha rahat istifadə üçün təlimatlar burada
+                        </p>
+                    </div>
+                    <img src="img/nece.png" alt="" class="h-[70px] w-full object-contain">
+                </a>
+
+                <a href="#" class="grid grid-cols-2 items-center overflow-hidden rounded-lg bg-[#f5f5f7] p-3">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800">Tez-tez verilən suallar</h3>
+                        <p class="mt-1 text-md text-gray-500">
+                            Ən çox verilən sualların cavablarını sənin üçün bir araya gətirdik
+                        </p>
+                    </div>
+                    <img src="img/tez.png" alt="" class="h-[70px] w-full object-contain">
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="w-full bg-[#25282b] py-12">
+    <div class="mx-auto w-full max-w-[1100px] px-5">
+        <div class="flex flex-col items-start justify-between gap-10 lg:flex-row">
+
+            <div class="shrink-0">
+                <a href="#">
+                    <img src="img/birbank_full_color.png" alt="Birbank" class="w-[300px]">
+                </a>
+            </div>
+
+            <div>
+                <ul class="flex flex-col gap-5 text-lg text-white">
+                    <li><a href="#" class="hover:underline">Kartlar</a></li>
+                    <li><a href="#" class="hover:underline">Avtomobil lizinqi</a></li>
+                    <li><a href="#" class="hover:underline">Xəbərlər</a></li>
+                    <li><a href="#" class="hover:underline">Ninja</a></li>
+                    <li><a href="#" class="hover:underline">Bloqlar</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="flex flex-col gap-5 text-lg text-white">
+                    <li><a href="#" class="hover:underline">Partnyorlar</a></li>
+                    <li><a href="#" class="hover:underline">Sığortalar</a></li>
+                    <li><a href="#" class="hover:underline">Tariflər</a></li>
+                    <li><a href="#" class="hover:underline">Birbank tətbiqi</a></li>
+                    <li><a href="#" class="hover:underline">Kapital Bank Hesabatları</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="flex flex-col gap-5 text-lg text-white">
+                    <li><a href="#" class="hover:underline">Kampaniyalar</a></li>
+                    <li><a href="#" class="hover:underline">Haqqımızda</a></li>
+                    <li><a href="#" class="hover:underline">FAQ</a></li>
+                    <li><a href="#" class="hover:underline">Ekosistem</a></li>
+                    <li><a href="#" class="hover:underline">Təklif və şikayətlər</a></li>
+                </ul>
+            </div>
+
+            <div class="flex shrink-0 items-start gap-4">
+                <div class="flex flex-col gap-2">
+                    <a href="#" class="flex h-[60px] w-[188px] items-center gap-3 rounded-xl border border-white px-4 py-2 text-white">
+                        <i class="fa-brands fa-app-store-ios text-2xl text-[#ef1938]"></i>
+                        <div class="leading-tight">
+                            <div class="text-lg font-semibold">App Store</div>
+                            <div class="whitespace-nowrap text-xs">mobil tətbiqi yüklə</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="flex h-[60px] w-[188px] items-center gap-3 rounded-xl border border-white px-4 py-2 text-white">
+                        <i class="fa-brands fa-google-play text-2xl text-[#ef1938]"></i>
+                        <div class="leading-tight">
+                            <div class="text-lg font-semibold">Google Play</div>
+                            <div class="whitespace-nowrap text-xs">mobil tətbiqi yüklə</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="hidden shrink-0 lg:block">
+                    <img src="img/Screenshot 2026-11-16 011353.png" alt="QR kod" class="p-2 h-[120px] w-[120px] object-contain">
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-4 mt-6 border-b border-white pb-4 pt-8"></div>
+
+        <div class="flex flex-col items-center justify-between gap-5 text-sm text-white lg:flex-row">
+            <p>© 2026 «Kapital Bank» ASC. Bütün hüquqlar qorunur.</p>
+
+            <div class="flex flex-wrap items-center justify-between gap-7">
+                <a href="#" class="border-b border-white text-center hover:text-gray-300">
+                    Məxfilik sənədi
+                </a>
+
+                <a href="tel:196" class="flex items-center gap-2 text-2xl font-bold text-[#ef1938]">
+                    <i class="fa-solid fa-phone text-lg"></i>
+                    <span class="border-b-2 border-[#ef1938]">196</span>
+                </a>
+
+                <div class="flex items-center gap-6 text-2xl">
+                    <a href="#" class="text-[#ef1938] hover:text-white"><i class="fa-solid fa-comment-dots"></i></a>
+                    <a href="#" class="hover:text-[#ef1938]"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-[#ef1938]"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-[#ef1938]"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="hover:text-[#ef1938]"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-[#ef1938]"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+<script src="swiper.js"></script>
+
+<!-- Accessibility düyməsi -->
+<button type="button" class="accessibility-button" aria-label="Əlçatanlıq">
+    <i class="fa-solid fa-person"></i>
+</button>
+
+<!-- Chat düyməsi -->
+<button type="button" class="chat-button" aria-label="Onlayn çat">
+    <i class="fa-solid fa-comment-dots"></i>
+</button>
+
+</body>
+</html>
